@@ -4,6 +4,7 @@ import Link from 'next/link';
 import FotoAufar from '@/public/foto-profil.png'
 import Navbar from '@/components/Navbar';
 import ButtonGroup from '@/components/CV-Github-Button';
+import TechStack from '@/components/TechStack';
 
 export const page = () => {
   return (
@@ -26,6 +27,7 @@ export const page = () => {
              bg-[rgba(255,148,77,0.12)] blur-[74px] z-[1000]"
       ></div>
 
+      {/* Foto, Profil, dan Button*/}
       <div className='grid grid-cols-2 gap-10 pt-30 px-40' id='features'>
         <div>
           <div className="text-white font-sora text-[50px] font-semibold leading-[72px]">
@@ -53,6 +55,14 @@ export const page = () => {
             priority
           />
         </div>
+      </div>
+      {/* Tech Stack */}
+      <div
+      className="border-2 border-black 
+        bg-[linear-gradient(90deg,_rgba(0,0,0,0.32)_0%,_rgba(0,0,0,0.90)_100%)] 
+        backdrop-blur-[36px] rounded-[12px] p-4 text-white"
+      >
+        <TechStack/>
       </div>
     </div>
   )
