@@ -5,6 +5,7 @@ import FotoAufar from '@/public/foto-profil.png'
 import Navbar from '@/components/Navbar';
 import ButtonGroup from '@/components/CV-Github-Button';
 import TechStack from '@/components/TechStack';
+import ProjectCarousel from '@/components/Carousel';
 
 export const page = () => {
   return (
@@ -63,6 +64,12 @@ export const page = () => {
         backdrop-blur-[36px] rounded-[12px] p-4 text-white"
       >
         <TechStack/>
+      </div>
+      <div className="relative bg-[linear-gradient(180deg,_#132238_0%,_#2B384C_100%)] backdrop-blur-[36px] p-8 rounded-xl">
+        <div className='font-[sora] text-[35px] font-semibold text-white mb-4 text-center pt-12'>
+          Recent Project
+        </div>
+        <ProjectCarousel/>
       </div>
     </div>
   )
