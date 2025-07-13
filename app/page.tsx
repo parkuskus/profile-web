@@ -1,13 +1,12 @@
 import React from 'react'
 import Image from 'next/image'; 
-import Link from 'next/link'; 
 import FotoAufar from '@/public/foto-profil.png'
 import Navbar from '@/components/Navbar';
 import ButtonGroup from '@/components/CV-Github-Button';
 import TechStack from '@/components/TechStack';
 import ProjectCarousel from '@/components/Carousel';
 
-export const page = () => {
+export default function Page() {
   return (
     <div className='bg-[#132238] relative overflow-hidden'>
       <div>
@@ -75,4 +74,3 @@ export const page = () => {
   )
 }
 
-export default page;
