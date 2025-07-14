@@ -28,7 +28,7 @@ export default function Page() {
       ></div>
 
       {/* Foto, Profil, dan Button*/}
-      <div className='grid grid-cols-2 gap-10 pt-30 px-40' id='features'>
+      <div className='grid grid-cols-2 gap-10 pt-30 px-40' id='home'>
         <div>
           <div className="text-white font-sora text-[50px] font-semibold leading-[72px]">
           👋 Hey There, I’m
@@ -64,7 +64,7 @@ export default function Page() {
       >
         <TechStack/>
       </div>
-      <div className="relative bg-[linear-gradient(180deg,_#132238_0%,_#2B384C_100%)] backdrop-blur-[36px] p-8 rounded-xl">
+      <div className="relative bg-[linear-gradient(180deg,_#132238_0%,_#2B384C_100%)] backdrop-blur-[36px] p-8 rounded-xl" id='recent-projects'>
         <div className='font-[sora] text-[35px] font-semibold text-white mb-4 text-center pt-12'>
           Recent Project
         </div>

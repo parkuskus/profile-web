@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link href="#home" className="text-white font-sora">
             Home
           </Link>
-          <Link href="#projects" className="text-[#A5ACB5] font-sora hover:text-white transition">
+          <Link href="#recent-projects" className="text-[#A5ACB5] font-sora hover:text-white transition">
             Recent Project
           </Link>
           <Link href="#contact" className="text-[#A5ACB5] font-sora hover:text-white transition">
