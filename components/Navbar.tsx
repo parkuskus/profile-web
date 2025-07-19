@@ -8,10 +8,18 @@ import Logo from '@/public/stack.svg' // Replace with your actual logo path
 export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 z-50 bg-[#132238]">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-20 py-4 flex items-center justify-between">
         {/* Left side: Logo + Name */}
         <div className="flex items-center space-x-4">
-          <Image src={Logo} alt="Logo" width={40} height={40} />
+          <div className="w-12 h-12 rounded-lg bg-[#9249F2] shadow-[0px_8px_24px_rgba(138,67,255,0.24)] flex justify-center items-center pt-1">
+            <Image
+              src="/stack.svg"
+              alt="Logo"
+              width={40}
+              height={100}
+              className="w-[100px] h-auto"
+            />
+          </div>
           <div>
             <h1 className="text-white font-sora text-sm md:text-base">
               Muhammad Aufar Rizqi Kusuma
@@ -36,7 +44,7 @@ export default function Navbar() {
 
           <Link
             href="#contact"
-            className="flex font-sora items-center gap-2 px-4 py-2 border border-purple-500 text-purple-400 rounded-lg hover:bg-purple-500/10 transition"
+            className="flex font-sora items-center gap-3 px-5 py-3 border-[2px] font-semibold text-sm border-[#9249F2] text-purple-400 rounded-sm hover:bg-purple-500/10 transition"
           >
             <HiOutlineMail className="text-xl" />
             <span>Send Message</span>

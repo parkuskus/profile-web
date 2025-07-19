@@ -4,8 +4,9 @@ import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import { Projectsdata } from '@/types'
 
-const projects = [
+const projects: Projectsdata[] = [
   {
     title: 'Pokemon Simulation',
     description:
@@ -17,7 +18,7 @@ const projects = [
   {
     title: 'Nimons Hospital!',
     description:
-      'C-based application that simulate an administration and management system of hospital. It support management for various type of user including the Patient, Doctor, and also Manager. ',
+      'C-based application that simulate an administration and management system of hospital. It support management for various type of user including the Patient, Doctor, and also Manager.',
     image: '/project-2.png',
     category: 'Game Development',
     github: 'https://github.com/parkuskus/Tubes-Alprog1-Nimons-Hospital',
@@ -30,12 +31,19 @@ const projects = [
     category: 'Database Management',
     github: 'https://github.com/parkuskus/Makalah-Matdis-RSA_AES_Encryption',
   },
+  {
+    title: 'ATM Simulation',
+    description: 'This project is a simulation of an ATM system built using Python that was build in the framework of the final project for college course. It allows users to perform basic banking operations such as checking balance, withdrawing money, and depositing money. ',
+    image: '/project-4.png',
+    category: 'Simulation',
+    github: 'https://github.com/parkuskus/Tubes-Berkom-1',
+  },
 ]
 
 export default function ProjectCarousel() {
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
-      perView: 3,
+      perView: 3 ,
       spacing: 24,
     },
     loop: true,
@@ -49,7 +57,7 @@ export default function ProjectCarousel() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="keen-slider__slide bg-[#132238] p-4 rounded-xl flex flex-col justify-between min-h-[380px] shadow-md"
+              className="keen-slider__slide bg-[#132238] p-4 rounded-xl flex flex-col justify-between min-h-[500px] shadow-md"
             >
               <Image
                 src={project.image}
